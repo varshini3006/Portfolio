@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Varshini Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        /* NAVBAR */
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: blue;
+        }
+        
+        .nav-links a {
+            margin-left: 25px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links a:hover {
+            color: blue;
+        }
+        /* SECTION COMMON */
+        
+        section {
+            padding: 100px 60px;
+            min-height: 100vh;
+        }
+        
+        h2 {
+            color: blue;
+            margin-bottom: 20px;
+        }
+        /* HOME */
+        
+        #home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .home-left {
+            width: 50%;
+        }
+        
+        .home-left h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .home-left h3 {
+            color: blue;
+            margin-bottom: 15px;
+        }
+        
+        .home-left p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 22px;
+            margin-right: 15px;
+        }
+        
+        .social-icons a:hover {
+            color: blue;
+        }
+        
+        .home-right {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .image-box {
+            width: 260px;
+            height: 320px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-box img {
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+        }
+        /* ABOUT */
+        
+        #about p {
+            max-width: 800px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        /* SKILLS */
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-box {
+            background: #111;
+            padding: 20px;
+            border-left: 4px solid blue;
+        }
+        /* CERTIFICATIONS */
+        
+        .cert-box {
+            background: #111;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid blue;
+        }
+        /* PROJECTS */
+        
+        .project {
+            background: #111;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid blue;
+        }
+        
+        .project h3 {
+            color: blue;
+            margin-bottom: 10px;
+        }
+        
+        .contact-btn {
+            background-color: blue;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 30px;
+        }
+        
+        .contact-btn:hover {
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SRI VARSHINI <span>BOGOJU</span></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="home-left">
+            <h1>Hi, I’m Sri Varshini</h1>
+            <h3>Full Stack Developer</h3>
+            <p>HTML | CSS | JavaScript | Reactjs | TailwindCSS</p>
+            <p>Java | Spring Boot | React | Python | SQL</p>
+            <p>Computer Science student passionate about building scalable and user-focused applications.</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sri-varshini-bogoju/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/varshini3006" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-right">
+            <div class="image-box">
+                <!-- replace profile.jpg -->
+                <img src="/WhatsApp Image 2025-12-22 at 7.08.48 PM.jpeg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science undergraduate from Sridevi Women’s Engineering College (JNTUH), graduating in 2025. I am passionate about software development and have hands-on experience in Java Full Stack Development, Machine Learning, and Python. I enjoy building
+            applications that solve real-world problems and continuously upskilling myself in modern technologies.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h4>Programming Languages</h4>
+                <p>Java, Python, C/C++, SQL</p>
+            </div>
+            <div class="skill-box">
+                <h4>Frameworks & Tools</h4>
+                <p>Spring Boot, React.js, HTML, CSS, JavaScript, MySQL, Git, GitHub</p>
+            </div>
+            <div class="skill-box">
+                <h4>Soft Skills</h4>
+                <p>Communication, Problem Solving, Teamwork, Adaptability, Leadership</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <h2>Certifications & Training</h2>
+
+        <div class="cert-box">
+            <h4>Java Full Stack Development Virtual Internship – Infosys Springboard (2025)</h4>
+            <p>Java, HTML, CSS, JavaScript, React, Spring Boot</p>
+        </div>
+
+        <div class="cert-box">
+            <h4>Python Virtual Internship</h4>
+            <p>Python, Data analysis, SQL, Power BI, Machine learning, Pandas, Numpy</p>
+        </div>
+
+        <div class="cert-box">
+            <h4>Full stack and Soft Skills Training Certification</h4>
+            <p>Professional communication, collaboration, problem-solving</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>General Health Prediction (Machine Learning)</h3>
+            <ul>
+                <li>Built ML models using SVM, Random Forest, and Logistic Regression</li>
+                <li>Achieved 92% accuracy using CVD dataset</li>
+                <li>Performed data preprocessing, feature engineering, and evaluation</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Deepfake Tweets Classification (NLP)</h3>
+            <ul>
+                <li>Designed NLP-based fake tweet detection system</li>
+                <li>Used TF-IDF, tokenization, and sentiment analysis</li>
+                <li>Achieved 88% precision</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>AI Agent (Python, LangChain, OpenAI)</h3>
+            <ul>
+                <li>Developed AI-powered handsfree automation agent</li>
+                <li>Automated web browsing, data extraction, and workflows</li>
+                <li>Integrated LLM with Playwright for task execution</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: srivarshinibogoju@gmail.com</p>
+            <p>Phone: +91 9704698107</p>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
